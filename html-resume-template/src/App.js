@@ -3,13 +3,12 @@ import "./index.css";
 export default function App() {
   return (
     <div className="max-w-full min-h-screen text-black bg-blue-200 px-4 print:px-0 py-10 print:py-0">
-      {/* resume page */}
+      {/* <-- resume page */}
       <div className="w-full sm:max-w-[52rem] lg:aspect-[8.5/11] bg-white rounded-3xl shadow-xl mx-auto
                       print:w-[52rem] print:h-[100vh] print:aspect-[8.5/11] print:rounded-none print:shadow-none">
         <div className="w-full h-full flex flex-col p-4 md:p-16 print:p-16">
-          {/* desktop header */}
-          <div className="hidden w-full sm:flex print:flex justify-between items-center">
-            <div className=""></div>
+          {/* <-- desktop header */}
+          <div className="w-full hidden sm:flex print:flex justify-between items-center">
             <h2 className="flex-1 text-4xl font-[1000]">First Name<br />Last Name</h2>
             <p>[optional headshot]</p>
             <div className="flex-1 flex sm:justify-end print:justify-end">
@@ -20,8 +19,8 @@ export default function App() {
               </div>
             </div>
           </div>
-          {/* desktop header end */}
-          {/* mobile header */}
+          {/* desktop header --> */}
+          {/* <-- mobile header */}
           <div className="sm:hidden print:hidden">
             <div className="flex w-full max-w-full justify-between items-center gap-3">
               <h2 className="text-3xl [@media(min-width:400px)]:text-4xl font-[1000]">First Name<br />Last Name</h2>
@@ -30,31 +29,31 @@ export default function App() {
               </div>
             </div>
           </div>
-          {/* mobile header end */}
+          {/* mobile header --> */}
 
           {/* gap between header and body */}
           <span className="mb-12" />
 
-          {/* body */}
+          {/* <-- body */}
           <div className="w-full h-full flex flex-col sm:flex-row print:flex-row gap-4">
-            {/* left column */}
+            {/* <-- left column */}
             <div className="flex-1 flex flex-col gap-4 bg-blue-50">
-              {/* links shown on mobile only */}
+              {/* <-- links shown on mobile only */}
               <div className="sm:hidden print:hidden">
                 <p>Links here</p>
                 <p>Or phone number, etc.</p>
                 <p>Whatever you want :)</p>
               </div>
-              {/* links shown on mobile only end */}
+              {/* links shown on mobile only --> */}
 
               <p>First column</p>
               <p className="text-2xl my-12">...</p>
               <p>You can see how it looks on mobile (or other screen sizes) using inspect element, and how it looks when you export to pdf by doing Ctrl+P or Cmd+P!</p>
               <p>If these light blue column boxes don't show up when you go to print and you're curious why, you have to go to "More settings" and check the "Background graphics" box.</p>
             </div>
-            {/* left column end */}
+            {/* left column --> */}
 
-            {/* right column */}
+            {/* <-- right column */}
             <div className="flex-1 flex flex-col gap-4 bg-blue-50">
               <p>Second column</p>
               <p className="text-2xl my-12">...</p>
@@ -63,12 +62,12 @@ export default function App() {
               <p className="my-36">...</p>
               <p>More content</p>
             </div>
-            {/* right column end */}
+            {/* right column --> */}
           </div>
-          {/* body end */}
+          {/* body --> */}
         </div>
       </div>
-      {/* resume page end */}
+      {/* resume page --> */}
     </div>
   )
 }
