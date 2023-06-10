@@ -57,8 +57,8 @@ export default function App() {
             <div className="flex-1 flex flex-col gap-4 bg-blue-50">
               <p>Second column</p>
               <p className="text-2xl my-12">...</p>
-              <p>Provided by <Link href="https://owengretzinger.com">Owen Gretzinger</Link> :) I would love to connect with you on <Link href="https://linkedin/com/in/owengretzinger">LinkedIn</Link>!</p>
-              <p>Check out <Link href="https://owengretzinger.com/resume">my resume</Link> (I created this template to share how I made it) and see <Link href="https://owengretzinger.com/articles/html-resume">the article I wrote about it</Link> if that isn't where you came from already!</p>
+              <p>Provided by <Link href="https://owengretzinger.com">Owen Gretzinger</Link> :) I would love to connect with you on <Link href="https://linkedin.com/in/owengretzinger">LinkedIn</Link>!</p>
+              <p>Check out <Link href="https://owengretzinger.com/resume">my resume</Link> (I created this template to share how I made it), see <Link href="https://owengretzinger.com/articles/html-resume">the article I wrote about it</Link> if that isn't where you came from already, and get the code on <Link href="https://github.com/owengretzinger/html-resume-template">GitHub</Link>!</p>
               <p className="my-36">...</p>
               <p>More content</p>
             </div>
