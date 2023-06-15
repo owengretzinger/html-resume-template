@@ -1,10 +1,12 @@
 # How To Create A Resume Using HTML
 
-This is a template created based off my resume, and I wrote an article about it! You can read the article at https://www.owengretzinger.com/articles/html-resume. I'm also copy and pasting the article into this readme, but there's a possibility it is outdated.
+This is a template created based off my resume, and I wrote an article about it! You can read the article at [owengretzinger.com/articles/html-resume](https://owengretzinger.com/articles/html-resume). 
+
+I'm also copy and pasting the article into this readme, but there are some internal links that will be broken and it could be outdated.
 
 ---
 
-In this article, I'll show you how to create an awesome web resume that can also be printed and used how you would expect. If you'd like to spare yourself from reading the whole thing, you can get code for the templete on [GitHub](https://github.com/owengretzinger/html-resume-template). ([Here's a preview](https://owengretzinger.github.io/html-resume-template/) of the template.)
+In this article, I'll show you how to create an awesome web resume that can also be printed and used how you would expect a resume to be used. If you'd like to spare yourself from reading the whole thing, you can get code for the templete on [GitHub](https://github.com/owengretzinger/html-resume-template). ([Here's a preview](https://owengretzinger.github.io/html-resume-template/) of the template.)
 
 You can also check out [my resume](/resume) to see a finished product. Here are some screenshots from the time of writing:
 
@@ -14,7 +16,7 @@ You can also check out [my resume](/resume) to see a finished product. Here are 
 
 ## Context 
 
-After [creating this website](/articles/personal-website), I realized my resume was a bit outdated, so I wanted to create a new one that matched my website's theme.
+After [creating this website](/articles/personal-website), I realized my resume was a bit outdated, so I wanted to make a new one that matched my website's theme.
 
 I didn't want to use a document editor like Word because that's way too restricive, I didn't want to use Latex (like I did for my last resume) because that's too annoying and time consuming, and I didn't want to use [Kickresume](https://kickresume.com) (even though all the LinkedIn influencers rave about it) because it still isn't flexible enough (especially the free version).
 
@@ -34,7 +36,7 @@ Luckily, there are two ways to solve this. When you are printing the page, you c
 
 ![](https://i.imgur.com/zmhL0aD.png)
 
-The other solution works by default without messing with any settings. You can use the [@page CSS rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@page) to remove the margins (in my case I put this in `globals.css`):
+The other solution works by default without messing with any settings. You can use the [@page CSS rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@page) to remove the margins:
 
 ```css
 @page {
@@ -92,7 +94,7 @@ In the body, the outer div is the background, and just adds some padding around 
 
 I also added rounding to the edges, a shadow, etc., but then removed those styles for printing.
 
-A width of `52rem` isn't particularly special, it was just a good size for me and worked well with some of the other things I had going on with my website. `print:h-[100vh]` ensures that the pdf is only one page (when you don't have it there's an empty second page).
+A width of `52rem` isn't particularly special, it was just a good size for me and worked well with some of the other things I had going on with my website. `print:h-[100vh]` ensures that the pdf is only one page (when you don't add that there's an empty second page).
 
 The inner div adds padding around the edges and is a flex box to make sure our resume content fits inside the page how its supposed to.
 
@@ -118,7 +120,7 @@ Now, let's add a header to the resume. Add the following where the "resume conte
 <!-- desktop header end -->
 ```
 
-I put my name on the left and some social links on the right. You could add a headshot in the middle like the resume templates on [Kickresume](https://kickresume.com) have, but I have heard recruiters say not to in order to avoid bias and for them to avoid bias accusations, so I removed the headshot from my resume. (Another idea is to have a version with a headshot and a version without, it could add a nice touch if the person looking at your resume already knows who you are!)
+I put my name on the left and some social links on the right. You could add a headshot in the middle like the resume templates on [Kickresume](https://kickresume.com) have, but I have heard recruiters say not to in order to avoid bias and for them to avoid bias accusations, so I removed the headshot from my resume. (Another idea is to have a version with a headshot and a version without, as it could add a nice touch if the person looking at your resume already knows who you are!)
 
 ![](https://i.imgur.com/fTxozjn.png)
 
@@ -178,7 +180,7 @@ I also put this between the header from earlier and the body from just now to ad
 <span class="my-6"></span>
 ```
 
-Lastly, make sure `input.css` looks like so:
+Lastly, make sure `input.css` looks like the following:
 
 ```css
 @tailwind base;
